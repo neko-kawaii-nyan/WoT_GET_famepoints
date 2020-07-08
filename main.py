@@ -2,8 +2,8 @@ import os
 import requests
 api_url = 'https://api.worldoftanks.asia/wot/globalmap/eventaccountratings/'
 app_id = os.environ['APP_ID'] # ここにWG-APIのIDを入力してもよい
-event_id = 'metal_wars'
-front_id = 'metal_wars_bg'
+event_id = 'metal_wars' # CWシーズンごとに代わる
+front_id = 'metal_wars_bg' # 同上
 fields = f'rank%2C+fame_points%2C'
 
 def get_fame_point(rank):
